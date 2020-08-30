@@ -10,6 +10,7 @@
 
 </head>
 <body>
+<canvas></canvas>
     <div class="main">
         <div class="intro">
             <img src="img/Candy_Many_Texture_519849_2560x1440.jpg" width="100%" height="100%"/>
