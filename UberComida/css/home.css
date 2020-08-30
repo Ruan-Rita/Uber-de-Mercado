@@ -146,9 +146,9 @@ h1{
 
 .contx{
     width: 1300px;
-    height: 800px;
+    height: 1000px;
     margin: auto;
-    background-color: antiquewhite;
+    background-color: rgb(241, 237, 232);
 
     margin-top: 0px;
     margin-bottom: 0px;
@@ -161,6 +161,10 @@ h1{
  *          RODAPE DA PAGINA
  *--------------------------------------*/
 .footer{
+    width: 100%;
+    background-color: #222;
+}
+.cont{
     width: 1300px;
     height: 500px;
     margin: auto;
@@ -176,7 +180,7 @@ h1{
 .marca{
     width: 50%;
     height: 30%;
-    background-color:  rgb(27, 25, 25);
+    background-color:  rgb(29, 29, 29);
     float: left;
 }
 
@@ -191,26 +195,103 @@ h1{
 .redeSociais{
     width: 50%;
     height: 30%;
-    background-color: rgb(27, 25, 25);
+    background-color: rgb(29, 29, 29);
     float:left;
 }
 .redeSociais h1{
     text-align: right;
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 10%;
-    margin-top:3%;
+    margin-top:4%;
     color: white;
 }
 .redes{
     width: 70%;
-    height: 40%;
-    background-color: blue;
+    height: 50px;/*
+    background-color: blue;*/
     float: right;
     margin-right: 10%;
 }
+.redes .rede1 ,.redes .rede2 ,.redes .rede3,.redes .rede4{
+    width: 50px ;
+    height: 100%;
+    margin-left: 1%;
+    background-color: white;
+    float:right;
+}
+.redes .rede1 ,.redes .rede2 ,.redes .rede3,.redes .rede4, .redes #img{
+    border-radius: 30px;
+}
+
+.redes .rede1:hover ,.redes .rede2:hover ,.redes .rede3:hover,.redes .rede4:hover{
+    width: 70px;
+    height:70px;
+    transition-duration: 400ms;
+    margin-right:-1%;
+    margin-top: -1%;
+         
+}
+
+
 .extras{
     width: 100%;
     height: 60%;
-    background-color: red;
+      background-color: rgb(29, 29, 29);
+    float: left;
+}
+.extras .part1, .part2{
+    width: 25%;
+    height: 100%;/*
+    background-color: pink;*/
+    float: left;
+}
+
+
+.part3{
+    width: 50%;
+    height: 100%;/*
+    background-color: pink;*/
+    float: right;
+}
+
+.extras h1{
+    margin-top:20%;
+    margin-left:20%;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white
+}
+
+.extras .part3 h1{
+    margin-top:10%;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white
+}
+.extras p{
+    margin-left:20%;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white
+}
+
+.autoral{
+    width: 100%;
+    height: 10%;
     float:left;
+    background-color: rgb(29, 29, 29);
+    
+}
+
+.autoral h1{
+    margin-left:37%;
+    margin-top:1%;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white
+
 }
