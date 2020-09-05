@@ -10,9 +10,9 @@
         public function __construct($c,$l,$a,$p){
             echo "Chamando o cosntrutor Pedido<br>";
             $this->comprimento = $c;
-            $this->largura = $c;
-            $this->altura = $c;
-            $this->pesoCalculado = $c;
+            $this->largura = $l;
+            $this->altura = $a;
+            $this->pesoCalculado = $p;
         }
 
         public function cadastrar(){
@@ -20,7 +20,7 @@
                 $conecta=new PDO("mysql:host=127.0.0.1;port=3306;dbname=encomenda","root","");
                 $conecta->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         
-                $sql="INSERT INTO pedido  VALUE (NULL,'".$this->comprimento."','".$this->largura."', '".$this->altura."', '".$this->peso."');";
+                $sql="INSERT INTO pedido  VALUE (NULL,'".$this->comprimento."','".$this->largura."', '".$this->altura."', '".$this->pesoCalculado."');";
         
                 $conecta->exec($sql);
         

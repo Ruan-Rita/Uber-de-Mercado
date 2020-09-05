@@ -59,6 +59,7 @@
         height:50px;
         margin-top:8%;
         width: 81%;
+        margin-top:45%;
     }
     #btn:hover{
         background-color: #60fe60;
@@ -73,7 +74,12 @@
         <form class="formulario" action="cubo.php">
             <p class="obj1" id="l">Resultado -> Peso Calculado</p>
             <hr width = “2” size = “100”  style="margin:0;padding:0;">
-            <input type="submit" value="Voltar Calcular Peso" class="obj" id="btn"/>   
+            <?php
+            session_start();
+            echo "<h1 class='obj'>Valor do Peso: ". $_SESSION['valor']."</h1>";
+            ?>
+            <input type="submit" value="Voltar Calcular Peso" class="obj" id="btn"/> 
+
               
         </form>
     </div>
